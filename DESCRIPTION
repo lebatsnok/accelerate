@@ -1,0 +1,28 @@
+Package: accelerate
+Type: Package
+Title: Analyze Accelerometer Data
+Version: 1.0.1
+Date: 2018-03-27
+Authors@R: c(person("Kenn", "Konstabel", role=c("aut", "cre"), email="kenn.konstabel@tai.ee"),
+    person("Leena", "Choi",  role="ctb", email="leena.choi@Vanderbilt.Edu"),
+    person("Zhouwen", "Liu", role="ctb", email="zhouwen.liu@Vanderbilt.Edu"),
+    person("Charles E.", "Matthews", role="ctb", email="Charles.Matthews2@nih.gov"),
+    person("Maciej S.", "Buchowski", role="ctb", email="maciej.buchowski@Vanderbilt.Edu"))
+Description: Analyzing accelerometer 'counts' data. The package includes all common steps in 
+    accelerometer data analysis: (1) reading in data files, (2) preprocessing, e.g., using
+    non-wear detection algorithms, (3) summarizing by arbitrary time units, and (4) summarizing
+    at the level of the individual. There are functions for plotting, converting the data into
+    time series (using the package 'zoo'), and batch processing. There are currently functions for reading in data files from
+    'Actigraph' <https://www.actigraphcorp.com/> and '3DNX' <https://www.ncbi.nlm.nih.gov/pubmed/21483427> devices,
+    in various text-based formats as well as the ActiGraph '.agd' files. 
+License: GPL (>= 2)
+Imports:
+    RSQLite,
+    DBI,
+    grDevices,
+    graphics,
+    stats,
+    utils
+Depends:
+    zoo
+RoxygenNote: 7.1.0

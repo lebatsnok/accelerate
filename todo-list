@@ -1,0 +1,2 @@
+1. instead of "ver" (accelerate-internal.R, ##AX736) use package_version in is.new.version
+

@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+Rfns
+.foo.agd
+todo-list
